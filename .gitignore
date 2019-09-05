@@ -1,0 +1,10 @@
+.DS_Store
+
+UserInterfaceState.xcuserstate
+project.xcworkspace/
+xcuserdata/
+build/
+
+# CocoaPods
+vendor/bundle
+Pods/
