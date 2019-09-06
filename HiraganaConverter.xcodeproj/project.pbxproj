@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -99,7 +99,6 @@
 				56FDCBFD98EE2001A0A4E95D /* Pods-HiraganaConverterUITests.debug.xcconfig */,
 				5795089588483CCFB944C843 /* Pods-HiraganaConverterUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -637,7 +636,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FE0E16CD06FEB73983EF11E6 /* Pods-HiraganaConverterTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BV3WX87BY4;
@@ -659,7 +658,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5A8D0B38D6D4E4EE4CF674C1 /* Pods-HiraganaConverterTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BV3WX87BY4;
@@ -681,7 +680,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 56FDCBFD98EE2001A0A4E95D /* Pods-HiraganaConverterUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BV3WX87BY4;
 				INFOPLIST_FILE = HiraganaConverterUITests/Info.plist;
@@ -702,7 +701,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5795089588483CCFB944C843 /* Pods-HiraganaConverterUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BV3WX87BY4;
 				INFOPLIST_FILE = HiraganaConverterUITests/Info.plist;
