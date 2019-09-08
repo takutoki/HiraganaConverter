@@ -11,12 +11,12 @@
 		6B5D1C30FB7CF0364BB6B392 /* Pods_HiraganaConverterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B623481588024DAED3BD1C4 /* Pods_HiraganaConverterTests.framework */; };
 		76C765804CEC981576F7786D /* Pods_HiraganaConverter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACD887D57217A9D53619DBC /* Pods_HiraganaConverter.framework */; };
 		9F821851231FDE5B0098E483 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F821850231FDE5B0098E483 /* AppDelegate.swift */; };
-		9F821853231FDE5B0098E483 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F821852231FDE5B0098E483 /* ViewController.swift */; };
-		9F821856231FDE5B0098E483 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F821854231FDE5B0098E483 /* Main.storyboard */; };
 		9F821858231FDE5C0098E483 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F821857231FDE5C0098E483 /* Assets.xcassets */; };
 		9F82185B231FDE5C0098E483 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F821859231FDE5C0098E483 /* LaunchScreen.storyboard */; };
 		9F821866231FDE5D0098E483 /* HiraganaConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F821865231FDE5D0098E483 /* HiraganaConverterTests.swift */; };
 		9F821871231FDE5D0098E483 /* HiraganaConverterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F821870231FDE5D0098E483 /* HiraganaConverterUITests.swift */; };
+		9F82507923255AB600A9712C /* CounvertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82507723255AB600A9712C /* CounvertViewController.swift */; };
+		9F82507A23255AB600A9712C /* CounvertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F82507823255AB600A9712C /* CounvertViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +45,6 @@
 		9ACD887D57217A9D53619DBC /* Pods_HiraganaConverter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiraganaConverter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F82184D231FDE5B0098E483 /* HiraganaConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiraganaConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F821850231FDE5B0098E483 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9F821852231FDE5B0098E483 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9F821855231FDE5B0098E483 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F821857231FDE5C0098E483 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F82185A231FDE5C0098E483 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F82185C231FDE5D0098E483 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +54,8 @@
 		9F82186C231FDE5D0098E483 /* HiraganaConverterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HiraganaConverterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F821870231FDE5D0098E483 /* HiraganaConverterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaConverterUITests.swift; sourceTree = "<group>"; };
 		9F821872231FDE5D0098E483 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F82507723255AB600A9712C /* CounvertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounvertViewController.swift; sourceTree = "<group>"; };
+		9F82507823255AB600A9712C /* CounvertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CounvertViewController.xib; sourceTree = "<group>"; };
 		B504CAFC40F59A652C239141 /* Pods_HiraganaConverterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiraganaConverterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A35ABEF179AEB019D93B71 /* Pods-HiraganaConverter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiraganaConverter.release.xcconfig"; path = "Target Support Files/Pods-HiraganaConverter/Pods-HiraganaConverter.release.xcconfig"; sourceTree = "<group>"; };
 		FE0E16CD06FEB73983EF11E6 /* Pods-HiraganaConverterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiraganaConverterTests.debug.xcconfig"; path = "Target Support Files/Pods-HiraganaConverterTests/Pods-HiraganaConverterTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -127,10 +127,12 @@
 		9F82184F231FDE5B0098E483 /* HiraganaConverter */ = {
 			isa = PBXGroup;
 			children = (
-				9F821850231FDE5B0098E483 /* AppDelegate.swift */,
-				9F821852231FDE5B0098E483 /* ViewController.swift */,
-				9F821854231FDE5B0098E483 /* Main.storyboard */,
 				9F821857231FDE5C0098E483 /* Assets.xcassets */,
+				9F82507523254E9600A9712C /* DataStructure */,
+				9F8250762325577400A9712C /* Models */,
+				9F82507423254CC500A9712C /* ViewModels */,
+				9F82507323254CB700A9712C /* Views */,
+				9F821850231FDE5B0098E483 /* AppDelegate.swift */,
 				9F821859231FDE5C0098E483 /* LaunchScreen.storyboard */,
 				9F82185C231FDE5D0098E483 /* Info.plist */,
 			);
@@ -153,6 +155,36 @@
 				9F821872231FDE5D0098E483 /* Info.plist */,
 			);
 			path = HiraganaConverterUITests;
+			sourceTree = "<group>";
+		};
+		9F82507323254CB700A9712C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9F82507723255AB600A9712C /* CounvertViewController.swift */,
+				9F82507823255AB600A9712C /* CounvertViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9F82507423254CC500A9712C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9F82507523254E9600A9712C /* DataStructure */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataStructure;
+			sourceTree = "<group>";
+		};
+		9F8250762325577400A9712C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		D66015991BF018C27E9ACE19 /* Frameworks */ = {
@@ -276,8 +308,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F82185B231FDE5C0098E483 /* LaunchScreen.storyboard in Resources */,
+				9F82507A23255AB600A9712C /* CounvertViewController.xib in Resources */,
 				9F821858231FDE5C0098E483 /* Assets.xcassets in Resources */,
-				9F821856231FDE5B0098E483 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,7 +454,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F821853231FDE5B0098E483 /* ViewController.swift in Sources */,
+				9F82507923255AB600A9712C /* CounvertViewController.swift in Sources */,
 				9F821851231FDE5B0098E483 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -459,14 +491,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9F821854231FDE5B0098E483 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9F821855231FDE5B0098E483 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9F821859231FDE5C0098E483 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
