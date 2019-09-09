@@ -17,11 +17,7 @@ class CounvertViewController: UIViewController {
     @IBOutlet weak var clearButton: UIButton!
     @IBOutlet weak var hiraganaTextView: UITextView!
     
-    @IBOutlet weak var scrollWidth: NSLayoutConstraint!
-    @IBOutlet weak var scrollHeight: NSLayoutConstraint!
-    
     let disposeBag = DisposeBag()
-    var navBarHeight: CGFloat { return navigationController?.navigationBar.frame.size.height ?? 0 }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,8 +41,8 @@ class CounvertViewController: UIViewController {
     }
     
     private func initScrollView() {
-        scrollWidth.constant = UIScreen.main.bounds.width
-        scrollHeight.constant = UIScreen.main.bounds.height - navBarHeight
+//        scrollWidth.constant = UIScreen.main.bounds.width
+//        scrollHeight.constant = UIScreen.main.bounds.height - navBarHeight
     }
     
     private func initView() {
