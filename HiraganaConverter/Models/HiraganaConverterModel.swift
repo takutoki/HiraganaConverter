@@ -13,6 +13,8 @@ protocol HiraganaConverterModelProtocol: AnyObject {
     
     var hiraganaText: BehaviorRelay<String> { get set }
     var hiraganaStream: Observable<String> { get }
+    
+    func request(sentence: String)
 }
 
 class HiraganaConverterModel: HiraganaConverterModelProtocol {
