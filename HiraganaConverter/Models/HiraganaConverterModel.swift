@@ -11,20 +11,18 @@ import RxCocoa
 
 protocol HiraganaConverterModelProtocol: AnyObject {
     
-    var hiraganaText: BehaviorRelay<String> { get set }
     var hiraganaStream: Observable<String> { get }
-    
-    func request(sentence: String)
+    func convertRequest(sentence: String)
 }
 
 class HiraganaConverterModel: HiraganaConverterModelProtocol {
     
-    var hiraganaText: BehaviorRelay<String> = BehaviorRelay(value: "")
+    private let hiraganaText: BehaviorRelay<String> = BehaviorRelay(value: "")
     var hiraganaStream: Observable<String> { return hiraganaText.asObservable()}
     
     init() {}
     
-    func request(sentence: String) {
+    func convertRequest(sentence: String) {
         
     }
 }
