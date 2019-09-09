@@ -11,12 +11,13 @@ import RxCocoa
 
 protocol HiraganaConverterViewModelProtocol: AnyObject {
     
+    var model: HiraganaConverterModelProtocol! { get }
     var hiraganaStream: Observable<String> { get }
     func convertRequest(sentence: String)
 }
 
-class HiraganaConverterViewModel: HiraganaConverterModelProtocol {
-    
+class HiraganaConverterViewModel: HiraganaConverterViewModelProtocol {
+
     var model: HiraganaConverterModelProtocol!
     var hiraganaStream: Observable<String> { return model.hiraganaStream }
     
@@ -25,6 +26,6 @@ class HiraganaConverterViewModel: HiraganaConverterModelProtocol {
     }
     
     func convertRequest(sentence: String) {
-        
+        model.convertRequest(sentence: sentence)
     }
 }

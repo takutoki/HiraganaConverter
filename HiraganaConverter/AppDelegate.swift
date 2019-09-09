@@ -20,12 +20,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private func setUpFirstViewController() {
-        let viewController = CounvertViewController()
-        navigationController = UINavigationController(rootViewController: viewController)
+        navigationController = UINavigationController(rootViewController: createFirstViewController())
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
+    }
+    
+    private func createFirstViewController() -> UIViewController {
+        let model = HiraganaConverterModel()
+        let viewModel = HiraganaConverterViewModel(inject: model)
+        return CounvertViewController(inject: viewModel)
     }
     
     private func setUpGooAPI() {
