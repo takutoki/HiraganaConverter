@@ -16,7 +16,7 @@ class GooAPI: BaseAPIProtocol {
     var headers: HTTPHeaders? = [:]
     let appID = "42a130a4a62eb8aa2552e5fcc89fd9ee00f36c0a9c6122b119a5797e468e9ac7"
     
-    func request(url: String, method: HTTPMethod, parameter: [String : Any]? ) -> Observable<GooAPIResponse> {
+    private func request(url: String, method: HTTPMethod, parameter: [String : Any] ) -> Observable<GooAPIResponse> {
         return Observable.create{ [weak self] observer in
             _ = AF.request(url, method: method, parameters: parameter, headers: self?.headers)
                 .responseJSON{ [weak self] response in self?.handleResponse(observer, response) }
@@ -26,7 +26,7 @@ class GooAPI: BaseAPIProtocol {
         }
     }
     
-    func handleResponse(_ observer: AnyObserver<GooAPIResponse>, _ response: AFDataResponse<Any>) {
+    private func handleResponse(_ observer: AnyObserver<GooAPIResponse>, _ response: AFDataResponse<Any>) {
         switch response.result {
         case .success:
             let gooApiResponse = GooAPIResponse(json: JSON(response.value!))
@@ -37,6 +37,11 @@ class GooAPI: BaseAPIProtocol {
     }
     
     func post(path: String, parameter: [String : Any]?) -> Observable<GooAPIResponse> {
-        return request(url: path, method: .post, parameter: parameter)
+        return request(url: baseURL + path, method: .post, parameter: mergeAppKeyParameter(parameter))
+    }
+    
+    func mergeAppKeyParameter(_ parameter: [String : Any]?) -> [String : Any] {
+        guard let safeParameter = parameter else { return [:] }
+        return safeParameter.merging(["app_id": appID]) { $1 }
     }
 }
