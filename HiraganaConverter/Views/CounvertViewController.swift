@@ -37,24 +37,19 @@ class CounvertViewController: UIViewController {
     
     private func initAll() {
         initNavigation()
-        initScrollView()
         initView()
     }
     
     private func bindAll() {
         bindClearButton()
+        bindHiraganaText()
     }
     
     private func initNavigation() {
         navigationController?.navigationBar.defaultSetting()
         navigationItem.title = "ひらがな変換"
     }
-    
-    private func initScrollView() {
-//        scrollWidth.constant = UIScreen.main.bounds.width
-//        scrollHeight.constant = UIScreen.main.bounds.height - navBarHeight
-    }
-    
+
     private func initView() {
         kanjiLabel.text = "漢字　→　ひらがな"
         kanjiLabel.font = UIFont(name: "AppleSDGothicNeo-Medium", size: 20)
@@ -84,5 +79,11 @@ class CounvertViewController: UIViewController {
             base.kanjiTextView.text = ""
             base.hiraganaTextView.text = ""
         }
+    }
+    
+    private func bindHiraganaText() {
+        viewModel.hiraganaStream
+            .bind(to: hiraganaTextView.rx.text)
+            .disposed(by: disposeBag)
     }
 }
