@@ -10,6 +10,7 @@
 		391CA0B2C7A7D87025E0DFBC /* Pods_HiraganaConverterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B504CAFC40F59A652C239141 /* Pods_HiraganaConverterUITests.framework */; };
 		6B5D1C30FB7CF0364BB6B392 /* Pods_HiraganaConverterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B623481588024DAED3BD1C4 /* Pods_HiraganaConverterTests.framework */; };
 		76C765804CEC981576F7786D /* Pods_HiraganaConverter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACD887D57217A9D53619DBC /* Pods_HiraganaConverter.framework */; };
+		9F4DA0C6232821B500CDEB04 /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4DA0C5232821B500CDEB04 /* UINavigationController.swift */; };
 		9F821851231FDE5B0098E483 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F821850231FDE5B0098E483 /* AppDelegate.swift */; };
 		9F821858231FDE5C0098E483 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F821857231FDE5C0098E483 /* Assets.xcassets */; };
 		9F82185B231FDE5C0098E483 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F821859231FDE5C0098E483 /* LaunchScreen.storyboard */; };
@@ -54,6 +55,7 @@
 		5A8D0B38D6D4E4EE4CF674C1 /* Pods-HiraganaConverterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiraganaConverterTests.release.xcconfig"; path = "Target Support Files/Pods-HiraganaConverterTests/Pods-HiraganaConverterTests.release.xcconfig"; sourceTree = "<group>"; };
 		8B623481588024DAED3BD1C4 /* Pods_HiraganaConverterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiraganaConverterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ACD887D57217A9D53619DBC /* Pods_HiraganaConverter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiraganaConverter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F4DA0C5232821B500CDEB04 /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
 		9F82184D231FDE5B0098E483 /* HiraganaConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiraganaConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F821850231FDE5B0098E483 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F821857231FDE5C0098E483 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -218,9 +220,10 @@
 		9F82507B23257F9600A9712C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				9F82507C23257FF500A9712C /* UINavigationBar.swift */,
-				9F82507E23262C1B00A9712C /* UITextView.swift */,
 				9FA7FD912328063700DEBD0F /* UIColor.swift */,
+				9F82507C23257FF500A9712C /* UINavigationBar.swift */,
+				9F4DA0C5232821B500CDEB04 /* UINavigationController.swift */,
+				9F82507E23262C1B00A9712C /* UITextView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -524,6 +527,7 @@
 				9FA7FD80232643D300DEBD0F /* HiraganaConverterModel.swift in Sources */,
 				9FA7FD902327CF5900DEBD0F /* GooAPIRequestable.swift in Sources */,
 				9FA7FD872326764200DEBD0F /* Constants.swift in Sources */,
+				9F4DA0C6232821B500CDEB04 /* UINavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

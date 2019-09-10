@@ -21,6 +21,9 @@ class CounvertViewController: UIViewController {
     let viewModel: HiraganaConverterViewModelProtocol!
     let disposeBag = DisposeBag()
     
+    override var shouldAutorotate: Bool { return false }
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask { return .portrait }
+    
     init(inject viewModel: HiraganaConverterViewModelProtocol) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
@@ -34,6 +37,12 @@ class CounvertViewController: UIViewController {
         super.viewDidLoad()
         initAll()
         bindAll()
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if kanjiTextView.isFirstResponder {
+            kanjiTextView.resignFirstResponder()
+        }
     }
     
     private func initAll() {
