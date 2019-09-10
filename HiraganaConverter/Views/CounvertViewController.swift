@@ -21,6 +21,9 @@ class CounvertViewController: UIViewController {
     let viewModel: HiraganaConverterViewModelProtocol!
     let disposeBag = DisposeBag()
     
+    override var shouldAutorotate: Bool { return false }
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask { return .portrait }
+    
     init(inject viewModel: HiraganaConverterViewModelProtocol) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
