@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CounvertViewController" customModule="HiraganaConverter" customModuleProvider="target">
             <connections>
                 <outlet property="clearButton" destination="7bP-Z9-mUD" id="05X-6R-PfL"/>
+                <outlet property="convertButton" destination="AAC-Ml-3sg" id="pTG-cW-HDl"/>
                 <outlet property="hiraganaTextView" destination="Pcq-mi-F6O" id="Gv6-0V-iMp"/>
                 <outlet property="kanjiLabel" destination="h5k-Mc-vjp" id="hIt-Mi-3cR"/>
                 <outlet property="kanjiTextView" destination="8em-X2-f6H" id="s0O-pY-Ltr"/>
@@ -51,8 +52,16 @@
                             </constraints>
                             <state key="normal" title="Button"/>
                         </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AAC-Ml-3sg" userLabel="Convert Button">
+                            <rect key="frame" x="150" y="163" width="100" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="81m-zk-4dV"/>
+                                <constraint firstAttribute="width" constant="100" id="Ogf-LO-SnP"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                        </button>
                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Pcq-mi-F6O" userLabel="Hiragana Text View">
-                            <rect key="frame" x="16" y="163" width="368" height="90"/>
+                            <rect key="frame" x="16" y="283" width="368" height="90"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="90" id="CfE-s4-fhN"/>
@@ -64,10 +73,12 @@
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstItem="AAC-Ml-3sg" firstAttribute="top" secondItem="8em-X2-f6H" secondAttribute="bottom" constant="20" id="0WW-sx-EgU"/>
+                        <constraint firstItem="AAC-Ml-3sg" firstAttribute="centerX" secondItem="Hml-fk-mhn" secondAttribute="centerX" id="51Q-aE-eQK"/>
                         <constraint firstAttribute="trailing" secondItem="7bP-Z9-mUD" secondAttribute="trailing" constant="16" id="JdQ-4k-xeQ"/>
                         <constraint firstItem="h5k-Mc-vjp" firstAttribute="leading" secondItem="Hml-fk-mhn" secondAttribute="leading" constant="16" id="Kie-EM-Yqu"/>
                         <constraint firstItem="8em-X2-f6H" firstAttribute="top" secondItem="h5k-Mc-vjp" secondAttribute="bottom" constant="16" id="O7L-aJ-t7m"/>
-                        <constraint firstItem="Pcq-mi-F6O" firstAttribute="top" secondItem="8em-X2-f6H" secondAttribute="bottom" constant="20" id="XVr-br-LN7"/>
+                        <constraint firstItem="Pcq-mi-F6O" firstAttribute="top" secondItem="AAC-Ml-3sg" secondAttribute="bottom" constant="20" id="ZLx-rt-Z7W"/>
                         <constraint firstAttribute="trailing" secondItem="8em-X2-f6H" secondAttribute="trailing" constant="16" id="baa-cN-0IH"/>
                         <constraint firstItem="h5k-Mc-vjp" firstAttribute="top" secondItem="Hml-fk-mhn" secondAttribute="top" constant="16" id="cFB-6J-Axb"/>
                         <constraint firstAttribute="width" constant="400" id="cap-7E-roW"/>

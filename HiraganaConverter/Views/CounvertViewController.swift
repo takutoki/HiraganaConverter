@@ -15,9 +15,20 @@ class CounvertViewController: UIViewController {
     @IBOutlet weak var kanjiLabel: UILabel!
     @IBOutlet weak var kanjiTextView: UITextView!
     @IBOutlet weak var clearButton: UIButton!
+    @IBOutlet weak var convertButton: UIButton!
     @IBOutlet weak var hiraganaTextView: UITextView!
     
+    let viewModel: HiraganaConverterViewModelProtocol!
     let disposeBag = DisposeBag()
+    
+    init(inject viewModel: HiraganaConverterViewModelProtocol) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,27 +38,23 @@ class CounvertViewController: UIViewController {
     
     private func initAll() {
         initNavigation()
-        initScrollView()
         initView()
     }
     
     private func bindAll() {
         bindClearButton()
+        bindConvertButton()
+        bindHiraganaText()
     }
     
     private func initNavigation() {
         navigationController?.navigationBar.defaultSetting()
         navigationItem.title = "ひらがな変換"
     }
-    
-    private func initScrollView() {
-//        scrollWidth.constant = UIScreen.main.bounds.width
-//        scrollHeight.constant = UIScreen.main.bounds.height - navBarHeight
-    }
-    
+
     private func initView() {
         kanjiLabel.text = "漢字　→　ひらがな"
-        kanjiLabel.font = UIFont(name: "AppleSDGothicNeo-Medium", size: 20)
+        kanjiLabel.font = UIFont(name: "ヒラギノ明朝ProN W6", size: 20)
         kanjiTextView.text = ""
         kanjiTextView.defaultBorder()
         kanjiTextView.returnKeyType = .go
@@ -56,6 +63,12 @@ class CounvertViewController: UIViewController {
         clearButton.tintColor = .black
         clearButton.imageView?.clipsToBounds = true
         clearButton.imageView?.contentMode = .scaleAspectFill
+        convertButton.setTitle("変換", for: .normal)
+        convertButton.titleLabel?.font = UIFont(name: "ヒラギノ明朝ProN W6", size: 20)
+        convertButton.setTitleColor(.white, for: .normal)
+        convertButton.backgroundColor = .dodgerBlue
+        convertButton.layer.masksToBounds = true
+        convertButton.layer.cornerRadius = convertButton.frame.width / 2
         hiraganaTextView.text = ""
         hiraganaTextView.defaultBorder()
         hiraganaTextView.textColor = .white
@@ -74,5 +87,19 @@ class CounvertViewController: UIViewController {
             base.kanjiTextView.text = ""
             base.hiraganaTextView.text = ""
         }
+    }
+    
+    private func bindConvertButton() {
+        convertButton.rx.tap
+            .map{ [weak self] _ in self?.kanjiTextView.text ?? "" }
+            .filter{ $0 != "" }
+            .bind(to: viewModel.convertBinder)
+            .disposed(by: disposeBag)
+    }
+    
+    private func bindHiraganaText() {
+        viewModel.hiraganaStream
+            .bind(to: hiraganaTextView.rx.text)
+            .disposed(by: disposeBag)
     }
 }
