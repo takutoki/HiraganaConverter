@@ -7,6 +7,7 @@
 //
 
 import Alamofire
+import SwiftyJSON
 import RxSwift
 
 class GooAPI: BaseAPIProtocol {
@@ -27,9 +28,11 @@ class GooAPI: BaseAPIProtocol {
     
     func handleResponse(_ observer: AnyObserver<GooAPIResponse>, _ response: AFDataResponse<Any>) {
         switch response.result {
-        case .success(let value):
-            
-        case .failure:
+        case .success:
+            let gooApiResponse = GooAPIResponse(json: JSON(response.value!))
+            observer.onNext(gooApiResponse)
+        case .failure(let error):
+            observer.onError(error)
         }
     }
 }
