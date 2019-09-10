@@ -39,6 +39,12 @@ class CounvertViewController: UIViewController {
         bindAll()
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if kanjiTextView.isFirstResponder {
+            kanjiTextView.resignFirstResponder()
+        }
+    }
+    
     private func initAll() {
         initNavigation()
         initView()
