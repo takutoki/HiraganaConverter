@@ -39,6 +39,5 @@ class HiraganaConverterModel: HiraganaConverterModelProtocol, GooAPIRequestable 
     
     func onNext(response: GooAPIResponse) -> () {
         hiraganaText.accept(response.converted)
-        print("response:\(response.converted)")
     }
 }
