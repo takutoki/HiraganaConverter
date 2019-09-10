@@ -13,4 +13,6 @@ protocol BaseAPIProtocol {
     
     var baseURL: String { get }
     var headers: HTTPHeaders? { get }
+    
+    func post(path: String, parameter: [String : Any]?) -> Observable<GooAPIResponse>
 }

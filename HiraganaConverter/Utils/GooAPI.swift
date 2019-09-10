@@ -35,4 +35,8 @@ class GooAPI: BaseAPIProtocol {
             observer.onError(error)
         }
     }
+    
+    func post(path: String, parameter: [String : Any]?) -> Observable<GooAPIResponse> {
+        return request(url: path, method: .post, parameter: parameter)
+    }
 }
