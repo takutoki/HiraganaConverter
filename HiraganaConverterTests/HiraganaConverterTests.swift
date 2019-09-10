@@ -20,7 +20,6 @@ class HiraganaConverterTests: XCTestCase {
     }
 
     func testExample() {
-        let hoge = HiraganaConverterModel()
     }
 
 }
