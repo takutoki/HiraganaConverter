@@ -21,6 +21,11 @@
 		9F82507F23262C1B00A9712C /* UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82507E23262C1B00A9712C /* UITextView.swift */; };
 		9FA7FD80232643D300DEBD0F /* HiraganaConverterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7FD7F232643D300DEBD0F /* HiraganaConverterModel.swift */; };
 		9FA7FD82232648C500DEBD0F /* HiraganaConverterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7FD81232648C500DEBD0F /* HiraganaConverterViewModel.swift */; };
+		9FA7FD8423266DB200DEBD0F /* GooAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7FD8323266DB200DEBD0F /* GooAPIResponse.swift */; };
+		9FA7FD872326764200DEBD0F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7FD862326764200DEBD0F /* Constants.swift */; };
+		9FA7FD892326769F00DEBD0F /* Constants+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7FD882326769F00DEBD0F /* Constants+URL.swift */; };
+		9FA7FD8C2326779200DEBD0F /* BaseAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7FD8B2326779200DEBD0F /* BaseAPIProtocol.swift */; };
+		9FA7FD8E232695F200DEBD0F /* GooAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7FD8D232695F200DEBD0F /* GooAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +69,11 @@
 		9F82507E23262C1B00A9712C /* UITextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextView.swift; sourceTree = "<group>"; };
 		9FA7FD7F232643D300DEBD0F /* HiraganaConverterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaConverterModel.swift; sourceTree = "<group>"; };
 		9FA7FD81232648C500DEBD0F /* HiraganaConverterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaConverterViewModel.swift; sourceTree = "<group>"; };
+		9FA7FD8323266DB200DEBD0F /* GooAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooAPIResponse.swift; sourceTree = "<group>"; };
+		9FA7FD862326764200DEBD0F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9FA7FD882326769F00DEBD0F /* Constants+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+URL.swift"; sourceTree = "<group>"; };
+		9FA7FD8B2326779200DEBD0F /* BaseAPIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPIProtocol.swift; sourceTree = "<group>"; };
+		9FA7FD8D232695F200DEBD0F /* GooAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooAPI.swift; sourceTree = "<group>"; };
 		B504CAFC40F59A652C239141 /* Pods_HiraganaConverterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiraganaConverterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A35ABEF179AEB019D93B71 /* Pods-HiraganaConverter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiraganaConverter.release.xcconfig"; path = "Target Support Files/Pods-HiraganaConverter/Pods-HiraganaConverter.release.xcconfig"; sourceTree = "<group>"; };
 		FE0E16CD06FEB73983EF11E6 /* Pods-HiraganaConverterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiraganaConverterTests.debug.xcconfig"; path = "Target Support Files/Pods-HiraganaConverterTests/Pods-HiraganaConverterTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -136,8 +146,10 @@
 			isa = PBXGroup;
 			children = (
 				9F821857231FDE5C0098E483 /* Assets.xcassets */,
+				9FA7FD85232675AF00DEBD0F /* Constants */,
 				9F82507523254E9600A9712C /* DataStructure */,
 				9F82507B23257F9600A9712C /* Extensions */,
+				9FA7FD8A2326776700DEBD0F /* Utils */,
 				9F8250762325577400A9712C /* Models */,
 				9F82507423254CC500A9712C /* ViewModels */,
 				9F82507323254CB700A9712C /* Views */,
@@ -186,6 +198,7 @@
 		9F82507523254E9600A9712C /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				9FA7FD8323266DB200DEBD0F /* GooAPIResponse.swift */,
 			);
 			path = DataStructure;
 			sourceTree = "<group>";
@@ -205,6 +218,24 @@
 				9F82507E23262C1B00A9712C /* UITextView.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9FA7FD85232675AF00DEBD0F /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				9FA7FD862326764200DEBD0F /* Constants.swift */,
+				9FA7FD882326769F00DEBD0F /* Constants+URL.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		9FA7FD8A2326776700DEBD0F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9FA7FD8B2326779200DEBD0F /* BaseAPIProtocol.swift */,
+				9FA7FD8D232695F200DEBD0F /* GooAPI.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		D66015991BF018C27E9ACE19 /* Frameworks */ = {
@@ -475,11 +506,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FA7FD82232648C500DEBD0F /* HiraganaConverterViewModel.swift in Sources */,
+				9FA7FD8C2326779200DEBD0F /* BaseAPIProtocol.swift in Sources */,
 				9F82507D23257FF500A9712C /* UINavigationBar.swift in Sources */,
+				9FA7FD8E232695F200DEBD0F /* GooAPI.swift in Sources */,
+				9FA7FD8423266DB200DEBD0F /* GooAPIResponse.swift in Sources */,
+				9FA7FD892326769F00DEBD0F /* Constants+URL.swift in Sources */,
 				9F82507F23262C1B00A9712C /* UITextView.swift in Sources */,
 				9F82507923255AB600A9712C /* CounvertViewController.swift in Sources */,
 				9F821851231FDE5B0098E483 /* AppDelegate.swift in Sources */,
 				9FA7FD80232643D300DEBD0F /* HiraganaConverterModel.swift in Sources */,
+				9FA7FD872326764200DEBD0F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
