@@ -13,7 +13,7 @@ protocol HiraganaConverterViewModelProtocol: AnyObject {
     
     var model: HiraganaConverterModelProtocol! { get }
     var hiraganaStream: Observable<String> { get }
-    func convertRequest(sentence: String)
+    var convertBinder: Binder<String> { get }
 }
 
 class HiraganaConverterViewModel: HiraganaConverterViewModelProtocol {
@@ -25,7 +25,13 @@ class HiraganaConverterViewModel: HiraganaConverterViewModelProtocol {
         self.model = model
     }
     
-    func convertRequest(sentence: String) {
+    var convertBinder: Binder<String> {
+        return Binder(self) { base, sentence in
+            base.convertRequest(sentence: sentence)
+        }
+    }
+    
+    private func convertRequest(sentence: String) {
         model.convertRequest(sentence: sentence)
     }
 }

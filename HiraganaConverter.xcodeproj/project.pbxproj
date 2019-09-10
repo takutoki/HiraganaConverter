@@ -27,6 +27,7 @@
 		9FA7FD8C2326779200DEBD0F /* BaseAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7FD8B2326779200DEBD0F /* BaseAPIProtocol.swift */; };
 		9FA7FD8E232695F200DEBD0F /* GooAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7FD8D232695F200DEBD0F /* GooAPI.swift */; };
 		9FA7FD902327CF5900DEBD0F /* GooAPIRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7FD8F2327CF5900DEBD0F /* GooAPIRequestable.swift */; };
+		9FA7FD922328063700DEBD0F /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7FD912328063700DEBD0F /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		9FA7FD8B2326779200DEBD0F /* BaseAPIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPIProtocol.swift; sourceTree = "<group>"; };
 		9FA7FD8D232695F200DEBD0F /* GooAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooAPI.swift; sourceTree = "<group>"; };
 		9FA7FD8F2327CF5900DEBD0F /* GooAPIRequestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooAPIRequestable.swift; sourceTree = "<group>"; };
+		9FA7FD912328063700DEBD0F /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		B504CAFC40F59A652C239141 /* Pods_HiraganaConverterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiraganaConverterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A35ABEF179AEB019D93B71 /* Pods-HiraganaConverter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiraganaConverter.release.xcconfig"; path = "Target Support Files/Pods-HiraganaConverter/Pods-HiraganaConverter.release.xcconfig"; sourceTree = "<group>"; };
 		FE0E16CD06FEB73983EF11E6 /* Pods-HiraganaConverterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiraganaConverterTests.debug.xcconfig"; path = "Target Support Files/Pods-HiraganaConverterTests/Pods-HiraganaConverterTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 			children = (
 				9F82507C23257FF500A9712C /* UINavigationBar.swift */,
 				9F82507E23262C1B00A9712C /* UITextView.swift */,
+				9FA7FD912328063700DEBD0F /* UIColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -517,6 +520,7 @@
 				9F82507F23262C1B00A9712C /* UITextView.swift in Sources */,
 				9F82507923255AB600A9712C /* CounvertViewController.swift in Sources */,
 				9F821851231FDE5B0098E483 /* AppDelegate.swift in Sources */,
+				9FA7FD922328063700DEBD0F /* UIColor.swift in Sources */,
 				9FA7FD80232643D300DEBD0F /* HiraganaConverterModel.swift in Sources */,
 				9FA7FD902327CF5900DEBD0F /* GooAPIRequestable.swift in Sources */,
 				9FA7FD872326764200DEBD0F /* Constants.swift in Sources */,

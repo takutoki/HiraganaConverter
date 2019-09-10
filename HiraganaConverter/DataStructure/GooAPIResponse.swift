@@ -15,8 +15,8 @@ struct GooAPIResponse {
     var requestId: String
     
     init(json: JSON) {
-        converted = json[""].stringValue
-        outputType = json[""].stringValue
-        requestId = json[""].stringValue
+        converted = json["converted"].stringValue
+        outputType = json["output_type"].stringValue
+        requestId = json["request_id"].stringValue
     }
 }

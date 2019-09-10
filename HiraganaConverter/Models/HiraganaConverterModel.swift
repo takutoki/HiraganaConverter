@@ -30,7 +30,7 @@ class HiraganaConverterModel: HiraganaConverterModelProtocol, GooAPIRequestable 
         post(path: path, parameters: setParameter(sentence), onNext: onNext)
     }
     
-    func setParameter(_ sentence: String) -> [String: Any] {
+    func setParameter(_ sentence: String) -> [String: String] {
         return [
             "sentence" : sentence,
             "output_type" : "hiragana"
@@ -39,5 +39,6 @@ class HiraganaConverterModel: HiraganaConverterModelProtocol, GooAPIRequestable 
     
     func onNext(response: GooAPIResponse) -> () {
         hiraganaText.accept(response.converted)
+        print("response:\(response.converted)")
     }
 }
