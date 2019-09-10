@@ -3,20 +3,32 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		391CA0B2C7A7D87025E0DFBC /* Pods_HiraganaConverterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B504CAFC40F59A652C239141 /* Pods_HiraganaConverterUITests.framework */; };
 		6B5D1C30FB7CF0364BB6B392 /* Pods_HiraganaConverterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B623481588024DAED3BD1C4 /* Pods_HiraganaConverterTests.framework */; };
 		76C765804CEC981576F7786D /* Pods_HiraganaConverter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACD887D57217A9D53619DBC /* Pods_HiraganaConverter.framework */; };
+		9F4DA0C6232821B500CDEB04 /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4DA0C5232821B500CDEB04 /* UINavigationController.swift */; };
 		9F821851231FDE5B0098E483 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F821850231FDE5B0098E483 /* AppDelegate.swift */; };
-		9F821853231FDE5B0098E483 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F821852231FDE5B0098E483 /* ViewController.swift */; };
-		9F821856231FDE5B0098E483 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F821854231FDE5B0098E483 /* Main.storyboard */; };
 		9F821858231FDE5C0098E483 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F821857231FDE5C0098E483 /* Assets.xcassets */; };
 		9F82185B231FDE5C0098E483 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F821859231FDE5C0098E483 /* LaunchScreen.storyboard */; };
 		9F821866231FDE5D0098E483 /* HiraganaConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F821865231FDE5D0098E483 /* HiraganaConverterTests.swift */; };
 		9F821871231FDE5D0098E483 /* HiraganaConverterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F821870231FDE5D0098E483 /* HiraganaConverterUITests.swift */; };
+		9F82507923255AB600A9712C /* CounvertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82507723255AB600A9712C /* CounvertViewController.swift */; };
+		9F82507A23255AB600A9712C /* CounvertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F82507823255AB600A9712C /* CounvertViewController.xib */; };
+		9F82507D23257FF500A9712C /* UINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82507C23257FF500A9712C /* UINavigationBar.swift */; };
+		9F82507F23262C1B00A9712C /* UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82507E23262C1B00A9712C /* UITextView.swift */; };
+		9FA7FD80232643D300DEBD0F /* HiraganaConverterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7FD7F232643D300DEBD0F /* HiraganaConverterModel.swift */; };
+		9FA7FD82232648C500DEBD0F /* HiraganaConverterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7FD81232648C500DEBD0F /* HiraganaConverterViewModel.swift */; };
+		9FA7FD8423266DB200DEBD0F /* GooAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7FD8323266DB200DEBD0F /* GooAPIResponse.swift */; };
+		9FA7FD872326764200DEBD0F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7FD862326764200DEBD0F /* Constants.swift */; };
+		9FA7FD892326769F00DEBD0F /* Constants+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7FD882326769F00DEBD0F /* Constants+URL.swift */; };
+		9FA7FD8C2326779200DEBD0F /* BaseAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7FD8B2326779200DEBD0F /* BaseAPIProtocol.swift */; };
+		9FA7FD8E232695F200DEBD0F /* GooAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7FD8D232695F200DEBD0F /* GooAPI.swift */; };
+		9FA7FD902327CF5900DEBD0F /* GooAPIRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7FD8F2327CF5900DEBD0F /* GooAPIRequestable.swift */; };
+		9FA7FD922328063700DEBD0F /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7FD912328063700DEBD0F /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,10 +55,9 @@
 		5A8D0B38D6D4E4EE4CF674C1 /* Pods-HiraganaConverterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiraganaConverterTests.release.xcconfig"; path = "Target Support Files/Pods-HiraganaConverterTests/Pods-HiraganaConverterTests.release.xcconfig"; sourceTree = "<group>"; };
 		8B623481588024DAED3BD1C4 /* Pods_HiraganaConverterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiraganaConverterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ACD887D57217A9D53619DBC /* Pods_HiraganaConverter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiraganaConverter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F4DA0C5232821B500CDEB04 /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
 		9F82184D231FDE5B0098E483 /* HiraganaConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiraganaConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F821850231FDE5B0098E483 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9F821852231FDE5B0098E483 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9F821855231FDE5B0098E483 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F821857231FDE5C0098E483 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F82185A231FDE5C0098E483 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F82185C231FDE5D0098E483 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +67,19 @@
 		9F82186C231FDE5D0098E483 /* HiraganaConverterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HiraganaConverterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F821870231FDE5D0098E483 /* HiraganaConverterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaConverterUITests.swift; sourceTree = "<group>"; };
 		9F821872231FDE5D0098E483 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F82507723255AB600A9712C /* CounvertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounvertViewController.swift; sourceTree = "<group>"; };
+		9F82507823255AB600A9712C /* CounvertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CounvertViewController.xib; sourceTree = "<group>"; };
+		9F82507C23257FF500A9712C /* UINavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationBar.swift; sourceTree = "<group>"; };
+		9F82507E23262C1B00A9712C /* UITextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextView.swift; sourceTree = "<group>"; };
+		9FA7FD7F232643D300DEBD0F /* HiraganaConverterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaConverterModel.swift; sourceTree = "<group>"; };
+		9FA7FD81232648C500DEBD0F /* HiraganaConverterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaConverterViewModel.swift; sourceTree = "<group>"; };
+		9FA7FD8323266DB200DEBD0F /* GooAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooAPIResponse.swift; sourceTree = "<group>"; };
+		9FA7FD862326764200DEBD0F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9FA7FD882326769F00DEBD0F /* Constants+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+URL.swift"; sourceTree = "<group>"; };
+		9FA7FD8B2326779200DEBD0F /* BaseAPIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPIProtocol.swift; sourceTree = "<group>"; };
+		9FA7FD8D232695F200DEBD0F /* GooAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooAPI.swift; sourceTree = "<group>"; };
+		9FA7FD8F2327CF5900DEBD0F /* GooAPIRequestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooAPIRequestable.swift; sourceTree = "<group>"; };
+		9FA7FD912328063700DEBD0F /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		B504CAFC40F59A652C239141 /* Pods_HiraganaConverterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiraganaConverterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A35ABEF179AEB019D93B71 /* Pods-HiraganaConverter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiraganaConverter.release.xcconfig"; path = "Target Support Files/Pods-HiraganaConverter/Pods-HiraganaConverter.release.xcconfig"; sourceTree = "<group>"; };
 		FE0E16CD06FEB73983EF11E6 /* Pods-HiraganaConverterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiraganaConverterTests.debug.xcconfig"; path = "Target Support Files/Pods-HiraganaConverterTests/Pods-HiraganaConverterTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -99,7 +123,6 @@
 				56FDCBFD98EE2001A0A4E95D /* Pods-HiraganaConverterUITests.debug.xcconfig */,
 				5795089588483CCFB944C843 /* Pods-HiraganaConverterUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -128,10 +151,15 @@
 		9F82184F231FDE5B0098E483 /* HiraganaConverter */ = {
 			isa = PBXGroup;
 			children = (
-				9F821850231FDE5B0098E483 /* AppDelegate.swift */,
-				9F821852231FDE5B0098E483 /* ViewController.swift */,
-				9F821854231FDE5B0098E483 /* Main.storyboard */,
 				9F821857231FDE5C0098E483 /* Assets.xcassets */,
+				9FA7FD85232675AF00DEBD0F /* Constants */,
+				9F82507523254E9600A9712C /* DataStructure */,
+				9F82507B23257F9600A9712C /* Extensions */,
+				9FA7FD8A2326776700DEBD0F /* Utils */,
+				9F8250762325577400A9712C /* Models */,
+				9F82507423254CC500A9712C /* ViewModels */,
+				9F82507323254CB700A9712C /* Views */,
+				9F821850231FDE5B0098E483 /* AppDelegate.swift */,
 				9F821859231FDE5C0098E483 /* LaunchScreen.storyboard */,
 				9F82185C231FDE5D0098E483 /* Info.plist */,
 			);
@@ -154,6 +182,69 @@
 				9F821872231FDE5D0098E483 /* Info.plist */,
 			);
 			path = HiraganaConverterUITests;
+			sourceTree = "<group>";
+		};
+		9F82507323254CB700A9712C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9F82507723255AB600A9712C /* CounvertViewController.swift */,
+				9F82507823255AB600A9712C /* CounvertViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9F82507423254CC500A9712C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9FA7FD81232648C500DEBD0F /* HiraganaConverterViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9F82507523254E9600A9712C /* DataStructure */ = {
+			isa = PBXGroup;
+			children = (
+				9FA7FD8323266DB200DEBD0F /* GooAPIResponse.swift */,
+			);
+			path = DataStructure;
+			sourceTree = "<group>";
+		};
+		9F8250762325577400A9712C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9FA7FD7F232643D300DEBD0F /* HiraganaConverterModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9F82507B23257F9600A9712C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9FA7FD912328063700DEBD0F /* UIColor.swift */,
+				9F82507C23257FF500A9712C /* UINavigationBar.swift */,
+				9F4DA0C5232821B500CDEB04 /* UINavigationController.swift */,
+				9F82507E23262C1B00A9712C /* UITextView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9FA7FD85232675AF00DEBD0F /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				9FA7FD862326764200DEBD0F /* Constants.swift */,
+				9FA7FD882326769F00DEBD0F /* Constants+URL.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		9FA7FD8A2326776700DEBD0F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9FA7FD8B2326779200DEBD0F /* BaseAPIProtocol.swift */,
+				9FA7FD8D232695F200DEBD0F /* GooAPI.swift */,
+				9FA7FD8F2327CF5900DEBD0F /* GooAPIRequestable.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		D66015991BF018C27E9ACE19 /* Frameworks */ = {
@@ -277,8 +368,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F82185B231FDE5C0098E483 /* LaunchScreen.storyboard in Resources */,
+				9F82507A23255AB600A9712C /* CounvertViewController.xib in Resources */,
 				9F821858231FDE5C0098E483 /* Assets.xcassets in Resources */,
-				9F821856231FDE5B0098E483 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,8 +514,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F821853231FDE5B0098E483 /* ViewController.swift in Sources */,
+				9FA7FD82232648C500DEBD0F /* HiraganaConverterViewModel.swift in Sources */,
+				9FA7FD8C2326779200DEBD0F /* BaseAPIProtocol.swift in Sources */,
+				9F82507D23257FF500A9712C /* UINavigationBar.swift in Sources */,
+				9FA7FD8E232695F200DEBD0F /* GooAPI.swift in Sources */,
+				9FA7FD8423266DB200DEBD0F /* GooAPIResponse.swift in Sources */,
+				9FA7FD892326769F00DEBD0F /* Constants+URL.swift in Sources */,
+				9F82507F23262C1B00A9712C /* UITextView.swift in Sources */,
+				9F82507923255AB600A9712C /* CounvertViewController.swift in Sources */,
 				9F821851231FDE5B0098E483 /* AppDelegate.swift in Sources */,
+				9FA7FD922328063700DEBD0F /* UIColor.swift in Sources */,
+				9FA7FD80232643D300DEBD0F /* HiraganaConverterModel.swift in Sources */,
+				9FA7FD902327CF5900DEBD0F /* GooAPIRequestable.swift in Sources */,
+				9FA7FD872326764200DEBD0F /* Constants.swift in Sources */,
+				9F4DA0C6232821B500CDEB04 /* UINavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,14 +563,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9F821854231FDE5B0098E483 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9F821855231FDE5B0098E483 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9F821859231FDE5C0098E483 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -637,7 +732,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FE0E16CD06FEB73983EF11E6 /* Pods-HiraganaConverterTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BV3WX87BY4;
@@ -659,7 +754,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5A8D0B38D6D4E4EE4CF674C1 /* Pods-HiraganaConverterTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BV3WX87BY4;
@@ -681,7 +776,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 56FDCBFD98EE2001A0A4E95D /* Pods-HiraganaConverterUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BV3WX87BY4;
 				INFOPLIST_FILE = HiraganaConverterUITests/Info.plist;
@@ -702,7 +797,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5795089588483CCFB944C843 /* Pods-HiraganaConverterUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BV3WX87BY4;
 				INFOPLIST_FILE = HiraganaConverterUITests/Info.plist;
