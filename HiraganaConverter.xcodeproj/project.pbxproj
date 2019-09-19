@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		391CA0B2C7A7D87025E0DFBC /* Pods_HiraganaConverterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B504CAFC40F59A652C239141 /* Pods_HiraganaConverterUITests.framework */; };
 		6B5D1C30FB7CF0364BB6B392 /* Pods_HiraganaConverterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B623481588024DAED3BD1C4 /* Pods_HiraganaConverterTests.framework */; };
 		76C765804CEC981576F7786D /* Pods_HiraganaConverter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACD887D57217A9D53619DBC /* Pods_HiraganaConverter.framework */; };
 		9F4DA0C6232821B500CDEB04 /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4DA0C5232821B500CDEB04 /* UINavigationController.swift */; };
@@ -29,6 +28,7 @@
 		9FA7FD8E232695F200DEBD0F /* GooAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7FD8D232695F200DEBD0F /* GooAPI.swift */; };
 		9FA7FD902327CF5900DEBD0F /* GooAPIRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7FD8F2327CF5900DEBD0F /* GooAPIRequestable.swift */; };
 		9FA7FD922328063700DEBD0F /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7FD912328063700DEBD0F /* UIColor.swift */; };
+		F5A2CF5BEFF65DE04D0552F9 /* libPods-HiraganaConverterUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC4B6CC73154716BBECF335 /* libPods-HiraganaConverterUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,8 +80,8 @@
 		9FA7FD8D232695F200DEBD0F /* GooAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooAPI.swift; sourceTree = "<group>"; };
 		9FA7FD8F2327CF5900DEBD0F /* GooAPIRequestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooAPIRequestable.swift; sourceTree = "<group>"; };
 		9FA7FD912328063700DEBD0F /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
-		B504CAFC40F59A652C239141 /* Pods_HiraganaConverterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiraganaConverterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A35ABEF179AEB019D93B71 /* Pods-HiraganaConverter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiraganaConverter.release.xcconfig"; path = "Target Support Files/Pods-HiraganaConverter/Pods-HiraganaConverter.release.xcconfig"; sourceTree = "<group>"; };
+		CBC4B6CC73154716BBECF335 /* libPods-HiraganaConverterUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HiraganaConverterUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE0E16CD06FEB73983EF11E6 /* Pods-HiraganaConverterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiraganaConverterTests.debug.xcconfig"; path = "Target Support Files/Pods-HiraganaConverterTests/Pods-HiraganaConverterTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,7 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				391CA0B2C7A7D87025E0DFBC /* Pods_HiraganaConverterUITests.framework in Frameworks */,
+				F5A2CF5BEFF65DE04D0552F9 /* libPods-HiraganaConverterUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,7 +252,7 @@
 			children = (
 				9ACD887D57217A9D53619DBC /* Pods_HiraganaConverter.framework */,
 				8B623481588024DAED3BD1C4 /* Pods_HiraganaConverterTests.framework */,
-				B504CAFC40F59A652C239141 /* Pods_HiraganaConverterUITests.framework */,
+				CBC4B6CC73154716BBECF335 /* libPods-HiraganaConverterUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -307,7 +307,6 @@
 				9F821868231FDE5D0098E483 /* Sources */,
 				9F821869231FDE5D0098E483 /* Frameworks */,
 				9F82186A231FDE5D0098E483 /* Resources */,
-				E509D88CDAA2218B6073F38A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -488,23 +487,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HiraganaConverter/Pods-HiraganaConverter-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E509D88CDAA2218B6073F38A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HiraganaConverterUITests/Pods-HiraganaConverterUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HiraganaConverterUITests/Pods-HiraganaConverterUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HiraganaConverterUITests/Pods-HiraganaConverterUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
