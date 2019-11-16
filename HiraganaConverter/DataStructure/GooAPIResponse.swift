@@ -6,17 +6,17 @@
 //  Copyright © 2019 takutoki. All rights reserved.
 //
 
-import SwiftyJSON
+import Foundation
 
-struct GooAPIResponse {
+struct GooAPIResponse: Codable {
     
     var converted: String
     var outputType: String
     var requestId: String
     
-    init(json: JSON) {
-        converted = json["converted"].stringValue
-        outputType = json["output_type"].stringValue
-        requestId = json["request_id"].stringValue
+    enum CodingKeys: String, CodingKey {
+        case converted
+        case outputType = "output_type"
+        case requestId = "request_id"
     }
 }

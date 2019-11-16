@@ -7,7 +7,6 @@
 //
 
 import Alamofire
-import SwiftyJSON
 import RxSwift
 
 class GooAPI: BaseAPIProtocol {
@@ -16,7 +15,7 @@ class GooAPI: BaseAPIProtocol {
     var headers: HTTPHeaders? = [.accept("application/json")]
     let appID = "42a130a4a62eb8aa2552e5fcc89fd9ee00f36c0a9c6122b119a5797e468e9ac7"
     
-    private func request(url: String, method: HTTPMethod, parameter: [String : String] ) -> Observable<GooAPIResponse> {
+    private func request(url: String, method: HTTPMethod, parameter: [String : String] ) -> Observable<Codable> {
         return Observable.create{ [weak self] observer in
             _ = AF.request(url, method: method, parameters: parameter, encoder: URLEncodedFormParameterEncoder(destination: .httpBody), headers: self?.headers)
                 .responseJSON{ [weak self] response in self?.handleResponse(observer, response) }
@@ -26,17 +25,18 @@ class GooAPI: BaseAPIProtocol {
         }
     }
     
-    private func handleResponse(_ observer: AnyObserver<GooAPIResponse>, _ response: AFDataResponse<Any>) {
+    private func handleResponse(_ observer: AnyObserver<Codable>, _ response: AFDataResponse<Any>) {
         switch response.result {
         case .success:
-            let gooApiResponse = GooAPIResponse(json: JSON(response.value!))
+            guard let responseJson = response.data else { return }
+            let gooApiResponse = try! JSONDecoder().decode(GooAPIResponse.self, from: responseJson)
             observer.onNext(gooApiResponse)
         case .failure(let error):
             observer.onError(error)
         }
     }
     
-    func post(path: String, parameter: [String : String]?) -> Observable<GooAPIResponse> {
+    func post(path: String, parameter: [String : String]?) -> Observable<Codable> {
         return request(url: baseURL + path, method: .post, parameter: mergeAppKeyParameter(parameter))
     }
     

@@ -14,5 +14,5 @@ protocol BaseAPIProtocol {
     var baseURL: String { get }
     var headers: HTTPHeaders? { get }
     
-    func post(path: String, parameter: [String : String]?) -> Observable<GooAPIResponse>
+    func post(path: String, parameter: [String : String]?) -> Observable<Codable>
 }
