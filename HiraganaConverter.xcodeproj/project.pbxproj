@@ -129,9 +129,27 @@
 		9F1C9B1A237FE12600A4F098 /* APIClient */ = {
 			isa = PBXGroup;
 			children = (
-				9FA7FD8B2326779200DEBD0F /* BaseAPIProtocol.swift */,
+				9F1C9B1B237FE53300A4F098 /* Base */,
+				9F1C9B1C237FE55100A4F098 /* Client */,
 			);
 			path = APIClient;
+			sourceTree = "<group>";
+		};
+		9F1C9B1B237FE53300A4F098 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9FA7FD8B2326779200DEBD0F /* BaseAPIProtocol.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		9F1C9B1C237FE55100A4F098 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				9FA7FD8D232695F200DEBD0F /* GooAPI.swift */,
+				9FA7FD8F2327CF5900DEBD0F /* GooAPIRequestable.swift */,
+			);
+			path = Client;
 			sourceTree = "<group>";
 		};
 		9F821844231FDE5B0098E483 = {
@@ -249,8 +267,6 @@
 			isa = PBXGroup;
 			children = (
 				9F1C9B1A237FE12600A4F098 /* APIClient */,
-				9FA7FD8D232695F200DEBD0F /* GooAPI.swift */,
-				9FA7FD8F2327CF5900DEBD0F /* GooAPIRequestable.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";

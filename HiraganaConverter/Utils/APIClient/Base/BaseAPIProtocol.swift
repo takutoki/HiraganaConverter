@@ -19,8 +19,8 @@ protocol BaseAPIProtocol {
     func request(url: String, method: HTTPMethod, parameter: [String : String] ) -> Observable<ResponseData>
     func handleResponse(_ observer: AnyObserver<ResponseData>, _ response: AFDataResponse<Any>)
     
-    func get(path: String, parameters: [String: String]?) -> Observable<ResponseData>
-    func post(path: String, parameter: [String : String]?) -> Observable<ResponseData>
+    func get(path: String, parameters: [String: String]) -> Observable<ResponseData>
+    func post(path: String, parameters: [String : String]) -> Observable<ResponseData>
 }
 
 extension BaseAPIProtocol {
@@ -44,5 +44,13 @@ extension BaseAPIProtocol {
         case .failure(let error):
             observer.onError(error)
         }
+    }
+    
+    func get(path: String, parameters: [String : String]) -> Observable<ResponseData> {
+        return request(url: baseURL + path, method: .get, parameter: parameters)
+    }
+    
+    func post(path: String, parameters: [String : String]) -> Observable<ResponseData> {
+        return request(url: baseURL + path, method: .post, parameter: parameters)
     }
 }
