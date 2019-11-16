@@ -18,7 +18,6 @@ protocol HiraganaConverterModelProtocol: AnyObject {
 class HiraganaConverterModel: HiraganaConverterModelProtocol, GooAPIRequestable {
     
     var disposeBag: DisposeBag = DisposeBag()
-    var requester: GooAPI = GooAPI()
     let path: String = "/api/hiragana"
     
     private let hiraganaText: BehaviorRelay<String> = BehaviorRelay(value: "")

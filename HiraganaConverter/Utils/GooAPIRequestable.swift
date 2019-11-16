@@ -13,12 +13,21 @@ protocol GooAPIRequestable {
     var disposeBag: DisposeBag { get }
     var requester: GooAPI { get }
     
-    func post(path: String, parameters: [String : String]?, onNext: @escaping (Codable) -> ())
+    func get(path: String, parameters: [String: String]?, onNext: @escaping (GooAPIResponse) -> ())
+    func post(path: String, parameters: [String : String]?, onNext: @escaping (GooAPIResponse) -> ())
 }
 
 extension GooAPIRequestable {
     
-    func post(path: String, parameters: [String : String]?, onNext: @escaping (Codable) -> ()) {
+    var requester = GooAPI()
+    
+    func get(path: String, parameters: [String: String]?, onNext: @escaping (GooAPIResponse) -> ()) {
+        requester.get(path: path, parameters: parameters)
+            .subscribe(onNext: onNext, onError: handleError)
+            .disposed(by: disposeBag)
+    }
+    
+    func post(path: String, parameters: [String : String]?, onNext: @escaping (GooAPIResponse) -> ()) {
         requester.post(path: path, parameter: parameters)
             .subscribe(onNext: onNext, onError: handleError)
             .disposed(by: disposeBag)
