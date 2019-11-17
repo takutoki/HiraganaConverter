@@ -17,11 +17,12 @@ class GooAPI: BaseAPIProtocol {
     var headers: HTTPHeaders? = [.accept("application/json")]
     let appID = "42a130a4a62eb8aa2552e5fcc89fd9ee00f36c0a9c6122b119a5797e468e9ac7"
         
-    func post(path: String, parameters: [String : String]) -> Observable<ResponseData> {
-        return request(url: baseURL + path, method: .post, parameter: mergeAppKeyParameter(parameters))
+    func post(path: String, parameters: [String : String]?) -> Observable<ResponseData> {
+        return request(url: baseURL + path, method: .post, parameters: mergeAppKeyParameter(parameters))
     }
     
-    func mergeAppKeyParameter(_ parameters: [String : String]) -> [String : String] {
-        return parameters.merging(["app_id": appID]) { $1 }
+    func mergeAppKeyParameter(_ parameters: [String : String]?) -> [String : String] {
+        guard let safeParameters = parameters else { return ["app_id": appID] }
+        return safeParameters.merging(["app_id": appID]) { $1 }
     }
 }

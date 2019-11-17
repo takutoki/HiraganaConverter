@@ -28,6 +28,8 @@
 		9FA7FD8E232695F200DEBD0F /* GooAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7FD8D232695F200DEBD0F /* GooAPI.swift */; };
 		9FA7FD902327CF5900DEBD0F /* GooAPIRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7FD8F2327CF5900DEBD0F /* GooAPIRequestable.swift */; };
 		9FA7FD922328063700DEBD0F /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7FD912328063700DEBD0F /* UIColor.swift */; };
+		9FE8225123810DAB00711FB4 /* MockAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE8225023810DAB00711FB4 /* MockAPI.swift */; };
+		9FE8225323810E1700711FB4 /* MockAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE8225223810E1700711FB4 /* MockAPIResponse.swift */; };
 		F5A2CF5BEFF65DE04D0552F9 /* libPods-HiraganaConverterUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC4B6CC73154716BBECF335 /* libPods-HiraganaConverterUITests.a */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +82,8 @@
 		9FA7FD8D232695F200DEBD0F /* GooAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooAPI.swift; sourceTree = "<group>"; };
 		9FA7FD8F2327CF5900DEBD0F /* GooAPIRequestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooAPIRequestable.swift; sourceTree = "<group>"; };
 		9FA7FD912328063700DEBD0F /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		9FE8225023810DAB00711FB4 /* MockAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPI.swift; sourceTree = "<group>"; };
+		9FE8225223810E1700711FB4 /* MockAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIResponse.swift; sourceTree = "<group>"; };
 		B7A35ABEF179AEB019D93B71 /* Pods-HiraganaConverter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiraganaConverter.release.xcconfig"; path = "Target Support Files/Pods-HiraganaConverter/Pods-HiraganaConverter.release.xcconfig"; sourceTree = "<group>"; };
 		CBC4B6CC73154716BBECF335 /* libPods-HiraganaConverterUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HiraganaConverterUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE0E16CD06FEB73983EF11E6 /* Pods-HiraganaConverterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiraganaConverterTests.debug.xcconfig"; path = "Target Support Files/Pods-HiraganaConverterTests/Pods-HiraganaConverterTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -177,17 +181,18 @@
 		9F82184F231FDE5B0098E483 /* HiraganaConverter */ = {
 			isa = PBXGroup;
 			children = (
+				9F821850231FDE5B0098E483 /* AppDelegate.swift */,
 				9F821857231FDE5C0098E483 /* Assets.xcassets */,
 				9FA7FD85232675AF00DEBD0F /* Constants */,
 				9F82507523254E9600A9712C /* DataStructure */,
 				9F82507B23257F9600A9712C /* Extensions */,
-				9FA7FD8A2326776700DEBD0F /* Utils */,
+				9F82185C231FDE5D0098E483 /* Info.plist */,
+				9F821859231FDE5C0098E483 /* LaunchScreen.storyboard */,
 				9F8250762325577400A9712C /* Models */,
+				9FE8224F23810D6100711FB4 /* TestHelpers */,
+				9FA7FD8A2326776700DEBD0F /* Utils */,
 				9F82507423254CC500A9712C /* ViewModels */,
 				9F82507323254CB700A9712C /* Views */,
-				9F821850231FDE5B0098E483 /* AppDelegate.swift */,
-				9F821859231FDE5C0098E483 /* LaunchScreen.storyboard */,
-				9F82185C231FDE5D0098E483 /* Info.plist */,
 			);
 			path = HiraganaConverter;
 			sourceTree = "<group>";
@@ -269,6 +274,15 @@
 				9F1C9B1A237FE12600A4F098 /* APIClient */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		9FE8224F23810D6100711FB4 /* TestHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				9FE8225023810DAB00711FB4 /* MockAPI.swift */,
+				9FE8225223810E1700711FB4 /* MockAPIResponse.swift */,
+			);
+			path = TestHelpers;
 			sourceTree = "<group>";
 		};
 		D66015991BF018C27E9ACE19 /* Frameworks */ = {
@@ -523,6 +537,7 @@
 				9FA7FD82232648C500DEBD0F /* HiraganaConverterViewModel.swift in Sources */,
 				9FA7FD8C2326779200DEBD0F /* BaseAPIProtocol.swift in Sources */,
 				9F82507D23257FF500A9712C /* UINavigationBar.swift in Sources */,
+				9FE8225323810E1700711FB4 /* MockAPIResponse.swift in Sources */,
 				9FA7FD8E232695F200DEBD0F /* GooAPI.swift in Sources */,
 				9FA7FD8423266DB200DEBD0F /* GooAPIResponse.swift in Sources */,
 				9FA7FD892326769F00DEBD0F /* Constants+URL.swift in Sources */,
@@ -533,6 +548,7 @@
 				9FA7FD80232643D300DEBD0F /* HiraganaConverterModel.swift in Sources */,
 				9FA7FD902327CF5900DEBD0F /* GooAPIRequestable.swift in Sources */,
 				9FA7FD872326764200DEBD0F /* Constants.swift in Sources */,
+				9FE8225123810DAB00711FB4 /* MockAPI.swift in Sources */,
 				9F4DA0C6232821B500CDEB04 /* UINavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
