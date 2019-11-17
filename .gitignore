@@ -8,3 +8,6 @@ build/
 # CocoaPods
 vendor/bundle
 Pods/
+
+# Carthage
+Carthage/

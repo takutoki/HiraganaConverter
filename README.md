@@ -3,13 +3,13 @@
 
 ## 環境
 
-### Cococapods
+### Carthage
 
 ```bash
-$ pod install
+$ carthage update --platform iOS --no-use-binaries
 ```
 
 ### 起動
 ```bash
-$ open HiraganaConverter.xcworkspace
+$ open HiraganaConverter.xcodeproj
 ```
