@@ -3,13 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6B5D1C30FB7CF0364BB6B392 /* Pods_HiraganaConverterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B623481588024DAED3BD1C4 /* Pods_HiraganaConverterTests.framework */; };
-		76C765804CEC981576F7786D /* Pods_HiraganaConverter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACD887D57217A9D53619DBC /* Pods_HiraganaConverter.framework */; };
 		9F4DA0C6232821B500CDEB04 /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4DA0C5232821B500CDEB04 /* UINavigationController.swift */; };
+		9F569BC623813754003704AB /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F569BC523813754003704AB /* Alamofire.framework */; };
+		9F569BC723813754003704AB /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F569BC523813754003704AB /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F569BCD23813767003704AB /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F569BCC23813767003704AB /* RxSwift.framework */; };
+		9F569BCE23813767003704AB /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F569BCC23813767003704AB /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F569BD023813774003704AB /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F569BCF23813773003704AB /* RxCocoa.framework */; };
+		9F569BD123813774003704AB /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F569BCF23813773003704AB /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F569BD2238137CE003704AB /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F569BCC23813767003704AB /* RxSwift.framework */; };
+		9F569BD4238137DD003704AB /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F569BD3238137DD003704AB /* RxRelay.framework */; };
+		9F569BD5238137DD003704AB /* RxRelay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F569BD3238137DD003704AB /* RxRelay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F569BDA23813933003704AB /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F569BCC23813767003704AB /* RxSwift.framework */; };
 		9F821851231FDE5B0098E483 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F821850231FDE5B0098E483 /* AppDelegate.swift */; };
 		9F821858231FDE5C0098E483 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F821857231FDE5C0098E483 /* Assets.xcassets */; };
 		9F82185B231FDE5C0098E483 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F821859231FDE5C0098E483 /* LaunchScreen.storyboard */; };
@@ -30,7 +38,6 @@
 		9FA7FD922328063700DEBD0F /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7FD912328063700DEBD0F /* UIColor.swift */; };
 		9FE8225123810DAB00711FB4 /* MockAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE8225023810DAB00711FB4 /* MockAPI.swift */; };
 		9FE8225323810E1700711FB4 /* MockAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE8225223810E1700711FB4 /* MockAPIResponse.swift */; };
-		F5A2CF5BEFF65DE04D0552F9 /* libPods-HiraganaConverterUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC4B6CC73154716BBECF335 /* libPods-HiraganaConverterUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,14 +57,29 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9F4D18EA238132860034307B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9F569BD5238137DD003704AB /* RxRelay.framework in Embed Frameworks */,
+				9F569BD123813774003704AB /* RxCocoa.framework in Embed Frameworks */,
+				9F569BCE23813767003704AB /* RxSwift.framework in Embed Frameworks */,
+				9F569BC723813754003704AB /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		208D289CD0B188B21CF52DCA /* Pods-HiraganaConverter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiraganaConverter.debug.xcconfig"; path = "Target Support Files/Pods-HiraganaConverter/Pods-HiraganaConverter.debug.xcconfig"; sourceTree = "<group>"; };
-		56FDCBFD98EE2001A0A4E95D /* Pods-HiraganaConverterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiraganaConverterUITests.debug.xcconfig"; path = "Target Support Files/Pods-HiraganaConverterUITests/Pods-HiraganaConverterUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		5795089588483CCFB944C843 /* Pods-HiraganaConverterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiraganaConverterUITests.release.xcconfig"; path = "Target Support Files/Pods-HiraganaConverterUITests/Pods-HiraganaConverterUITests.release.xcconfig"; sourceTree = "<group>"; };
-		5A8D0B38D6D4E4EE4CF674C1 /* Pods-HiraganaConverterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiraganaConverterTests.release.xcconfig"; path = "Target Support Files/Pods-HiraganaConverterTests/Pods-HiraganaConverterTests.release.xcconfig"; sourceTree = "<group>"; };
-		8B623481588024DAED3BD1C4 /* Pods_HiraganaConverterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiraganaConverterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9ACD887D57217A9D53619DBC /* Pods_HiraganaConverter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiraganaConverter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F4DA0C5232821B500CDEB04 /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
+		9F569BC523813754003704AB /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		9F569BCC23813767003704AB /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		9F569BCF23813773003704AB /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		9F569BD3238137DD003704AB /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
 		9F82184D231FDE5B0098E483 /* HiraganaConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiraganaConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F821850231FDE5B0098E483 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F821857231FDE5C0098E483 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -84,9 +106,6 @@
 		9FA7FD912328063700DEBD0F /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		9FE8225023810DAB00711FB4 /* MockAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPI.swift; sourceTree = "<group>"; };
 		9FE8225223810E1700711FB4 /* MockAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIResponse.swift; sourceTree = "<group>"; };
-		B7A35ABEF179AEB019D93B71 /* Pods-HiraganaConverter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiraganaConverter.release.xcconfig"; path = "Target Support Files/Pods-HiraganaConverter/Pods-HiraganaConverter.release.xcconfig"; sourceTree = "<group>"; };
-		CBC4B6CC73154716BBECF335 /* libPods-HiraganaConverterUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HiraganaConverterUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE0E16CD06FEB73983EF11E6 /* Pods-HiraganaConverterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiraganaConverterTests.debug.xcconfig"; path = "Target Support Files/Pods-HiraganaConverterTests/Pods-HiraganaConverterTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +113,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76C765804CEC981576F7786D /* Pods_HiraganaConverter.framework in Frameworks */,
+				9F569BD2238137CE003704AB /* RxSwift.framework in Frameworks */,
+				9F569BD023813774003704AB /* RxCocoa.framework in Frameworks */,
+				9F569BCD23813767003704AB /* RxSwift.framework in Frameworks */,
+				9F569BC623813754003704AB /* Alamofire.framework in Frameworks */,
+				9F569BD4238137DD003704AB /* RxRelay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B5D1C30FB7CF0364BB6B392 /* Pods_HiraganaConverterTests.framework in Frameworks */,
+				9F569BDA23813933003704AB /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,26 +133,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5A2CF5BEFF65DE04D0552F9 /* libPods-HiraganaConverterUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5BE61A25D5786E040B378E4F /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				208D289CD0B188B21CF52DCA /* Pods-HiraganaConverter.debug.xcconfig */,
-				B7A35ABEF179AEB019D93B71 /* Pods-HiraganaConverter.release.xcconfig */,
-				FE0E16CD06FEB73983EF11E6 /* Pods-HiraganaConverterTests.debug.xcconfig */,
-				5A8D0B38D6D4E4EE4CF674C1 /* Pods-HiraganaConverterTests.release.xcconfig */,
-				56FDCBFD98EE2001A0A4E95D /* Pods-HiraganaConverterUITests.debug.xcconfig */,
-				5795089588483CCFB944C843 /* Pods-HiraganaConverterUITests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		9F1C9B1A237FE12600A4F098 /* APIClient */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +165,17 @@
 			path = Client;
 			sourceTree = "<group>";
 		};
+		9F569BC423813754003704AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F569BD3238137DD003704AB /* RxRelay.framework */,
+				9F569BCF23813773003704AB /* RxCocoa.framework */,
+				9F569BCC23813767003704AB /* RxSwift.framework */,
+				9F569BC523813754003704AB /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9F821844231FDE5B0098E483 = {
 			isa = PBXGroup;
 			children = (
@@ -163,8 +183,7 @@
 				9F821864231FDE5D0098E483 /* HiraganaConverterTests */,
 				9F82186F231FDE5D0098E483 /* HiraganaConverterUITests */,
 				9F82184E231FDE5B0098E483 /* Products */,
-				5BE61A25D5786E040B378E4F /* Pods */,
-				D66015991BF018C27E9ACE19 /* Frameworks */,
+				9F569BC423813754003704AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -285,16 +304,6 @@
 			path = TestHelpers;
 			sourceTree = "<group>";
 		};
-		D66015991BF018C27E9ACE19 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9ACD887D57217A9D53619DBC /* Pods_HiraganaConverter.framework */,
-				8B623481588024DAED3BD1C4 /* Pods_HiraganaConverterTests.framework */,
-				CBC4B6CC73154716BBECF335 /* libPods-HiraganaConverterUITests.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -302,11 +311,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F821875231FDE5D0098E483 /* Build configuration list for PBXNativeTarget "HiraganaConverter" */;
 			buildPhases = (
-				7B235AA50DDB7F9F55643A51 /* [CP] Check Pods Manifest.lock */,
 				9F821849231FDE5B0098E483 /* Sources */,
 				9F82184A231FDE5B0098E483 /* Frameworks */,
 				9F82184B231FDE5B0098E483 /* Resources */,
-				97C9465E8ABA32CE4F42EA38 /* [CP] Embed Pods Frameworks */,
+				9F4D18EA238132860034307B /* Embed Frameworks */,
+				9F4D18F12381330F0034307B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -321,11 +330,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F821878231FDE5D0098E483 /* Build configuration list for PBXNativeTarget "HiraganaConverterTests" */;
 			buildPhases = (
-				483E5C3EAA0A1626F6CECBFA /* [CP] Check Pods Manifest.lock */,
 				9F82185D231FDE5D0098E483 /* Sources */,
 				9F82185E231FDE5D0098E483 /* Frameworks */,
 				9F82185F231FDE5D0098E483 /* Resources */,
-				03DD4CE9DAED60F8D874D11F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -341,7 +348,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F82187B231FDE5D0098E483 /* Build configuration list for PBXNativeTarget "HiraganaConverterUITests" */;
 			buildPhases = (
-				4A447511CE8D0F1FEABBD3FB /* [CP] Check Pods Manifest.lock */,
 				9F821868231FDE5D0098E483 /* Sources */,
 				9F821869231FDE5D0098E483 /* Frameworks */,
 				9F82186A231FDE5D0098E483 /* Resources */,
@@ -427,24 +433,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		03DD4CE9DAED60F8D874D11F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HiraganaConverterTests/Pods-HiraganaConverterTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HiraganaConverterTests/Pods-HiraganaConverterTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HiraganaConverterTests/Pods-HiraganaConverterTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		483E5C3EAA0A1626F6CECBFA /* [CP] Check Pods Manifest.lock */ = {
+		9F4D18F12381330F0034307B /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -452,80 +441,18 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxRelay.framework",
 			);
-			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-HiraganaConverterTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4A447511CE8D0F1FEABBD3FB /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-HiraganaConverterUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7B235AA50DDB7F9F55643A51 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-HiraganaConverter-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		97C9465E8ABA32CE4F42EA38 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HiraganaConverter/Pods-HiraganaConverter-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HiraganaConverter/Pods-HiraganaConverter-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HiraganaConverter/Pods-HiraganaConverter-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -596,67 +523,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		9F821873231FDE5D0098E483 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
 		9F821874231FDE5D0098E483 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -702,7 +568,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -712,32 +578,16 @@
 			};
 			name = Release;
 		};
-		9F821876231FDE5D0098E483 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 208D289CD0B188B21CF52DCA /* Pods-HiraganaConverter.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BV3WX87BY4;
-				INFOPLIST_FILE = HiraganaConverter/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.takutoki.HiraganaConverter;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		9F821877231FDE5D0098E483 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7A35ABEF179AEB019D93B71 /* Pods-HiraganaConverter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BV3WX87BY4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = HiraganaConverter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -749,37 +599,18 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
-		};
-		9F821879231FDE5D0098E483 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE0E16CD06FEB73983EF11E6 /* Pods-HiraganaConverterTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BV3WX87BY4;
-				INFOPLIST_FILE = HiraganaConverterTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.takutoki.HiraganaConverterTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HiraganaConverter.app/HiraganaConverter";
-			};
-			name = Debug;
 		};
 		9F82187A231FDE5D0098E483 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5A8D0B38D6D4E4EE4CF674C1 /* Pods-HiraganaConverterTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BV3WX87BY4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = HiraganaConverterTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -794,9 +625,131 @@
 			};
 			name = Release;
 		};
-		9F82187C231FDE5D0098E483 /* Debug */ = {
+		9F82187D231FDE5D0098E483 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 56FDCBFD98EE2001A0A4E95D /* Pods-HiraganaConverterUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BV3WX87BY4;
+				INFOPLIST_FILE = HiraganaConverterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.takutoki.HiraganaConverterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HiraganaConverter;
+			};
+			name = Release;
+		};
+		9FB7FF5223813B0800D56264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Debug;
+		};
+		9FB7FF5323813B0800D56264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BV3WX87BY4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = HiraganaConverter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.takutoki.HiraganaConverter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9FB7FF5423813B0800D56264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BV3WX87BY4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = HiraganaConverterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.takutoki.HiraganaConverterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HiraganaConverter.app/HiraganaConverter";
+			};
+			name = Debug;
+		};
+		9FB7FF5523813B0800D56264 /* Debug */ = {
+			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
@@ -814,27 +767,6 @@
 				TEST_TARGET_NAME = HiraganaConverter;
 			};
 			name = Debug;
-		};
-		9F82187D231FDE5D0098E483 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5795089588483CCFB944C843 /* Pods-HiraganaConverterUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BV3WX87BY4;
-				INFOPLIST_FILE = HiraganaConverterUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.takutoki.HiraganaConverterUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = HiraganaConverter;
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -842,8 +774,8 @@
 		9F821848231FDE5B0098E483 /* Build configuration list for PBXProject "HiraganaConverter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9F821873231FDE5D0098E483 /* Debug */,
 				9F821874231FDE5D0098E483 /* Release */,
+				9FB7FF5223813B0800D56264 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -851,8 +783,8 @@
 		9F821875231FDE5D0098E483 /* Build configuration list for PBXNativeTarget "HiraganaConverter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9F821876231FDE5D0098E483 /* Debug */,
 				9F821877231FDE5D0098E483 /* Release */,
+				9FB7FF5323813B0800D56264 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -860,8 +792,8 @@
 		9F821878231FDE5D0098E483 /* Build configuration list for PBXNativeTarget "HiraganaConverterTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9F821879231FDE5D0098E483 /* Debug */,
 				9F82187A231FDE5D0098E483 /* Release */,
+				9FB7FF5423813B0800D56264 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -869,8 +801,8 @@
 		9F82187B231FDE5D0098E483 /* Build configuration list for PBXNativeTarget "HiraganaConverterUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9F82187C231FDE5D0098E483 /* Debug */,
 				9F82187D231FDE5D0098E483 /* Release */,
+				9FB7FF5523813B0800D56264 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
