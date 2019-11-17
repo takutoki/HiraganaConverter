@@ -9,7 +9,7 @@
 extension Constants {
     
     struct url {
-        static let baseURL = "https://"
-        static let gooAPI = "\(baseURL)labs.goo.ne.jp"
+        static let urlScheme = "https://"
+        static let gooAPI = "\(urlScheme)labs.goo.ne.jp"
     }
 }

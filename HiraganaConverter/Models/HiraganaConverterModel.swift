@@ -37,8 +37,7 @@ class HiraganaConverterModel: HiraganaConverterModelProtocol, GooAPIRequestable 
         ]
     }
     
-    func onNext(response: Codable) -> () {
-        guard let gooApiResponse = response as? GooAPIResponse else { return }
-        hiraganaText.accept(gooApiResponse.converted)
+    func onNext(response: GooAPIResponse) -> () {
+        hiraganaText.accept(response.converted)
     }
 }
